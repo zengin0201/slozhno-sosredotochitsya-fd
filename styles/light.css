@@ -5,8 +5,47 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --title-color: #ffc2e6;
+  --body-background-image-dark: url(../images/cover-image-light.png);
+  --section-title-color: #353430;
+  --paragraph-text-color: #353430;
+  --rectangle-color: #353430;
+  --button-color: #353430;
+  --block-title-color: #353430;
+  --block-title-background: #ff8dcb;
+  --border-color: #353430;
+  --hover-color: #353430;
+  --hover-adres: #353430;
+  --focus-adres: #353430;
+}
+
+:root.theme-light .rec-container {
+  display: none;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root:not(.theme-dark):not(.theme-light) {
+    --title-color: #ffc2e6;
+    --body-background-image-dark: url(../images/cover-image-light.png);
+    --section-title-color: #353430;
+    --paragraph-text-color: #353430;
+    --rectangle-color: #353430;
+    --button-color: #353430;
+    --block-title-color: #353430;
+    --block-title-background: #ff8dcb;
+    --border-color: #353430;
+    --hover-color: #353430;
+    --hover-adres: #353430;
+    --focus-adres: #353430;
+  }
+  
+  :root:not(.theme-dark):not(.theme-light) .rec-container {
+    display: none;
+  }
+  
+  :root:not(.theme-dark):not(.theme-light) .header__theme-menu-button_type_auto {
+    border: 1px solid var(--button-color);
+    pointer-events: none;
+  }
 }
