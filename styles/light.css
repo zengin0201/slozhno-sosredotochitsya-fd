@@ -6,7 +6,7 @@
 
 :root.theme-light {
   --title-color: #ffc2e6;
-  --body-background-image-dark: url(../images/cover-image-light.png);
+  --body-background-image: url(../images/cover-image-light.png);
   --section-title-color: #353430;
   --paragraph-text-color: #353430;
   --rectangle-color: #353430;
@@ -15,19 +15,22 @@
   --block-title-background: #ff8dcb;
   --border-color: #353430;
   --hover-color: #353430;
-  --hover-adres: #353430;
-  --focus-adres: #353430;
+  --link-hover-color: #353430;
+  --link-focus-color: #353430;
+  --link-shadow-color: #ff8dcb;
+  --accent-color: #ff8dcb;
+  --body-background-color:#FFF1F7;
 }
 
 :root.theme-light .rec-container {
   display: none;
 }
 
-
+/* Для авторежима с prefers-color-scheme: light */
 @media (prefers-color-scheme: light) {
-  :root:not(.theme-dark):not(.theme-light) {
+  :root {
     --title-color: #ffc2e6;
-    --body-background-image-dark: url(../images/cover-image-light.png);
+    --body-background-image: url(../images/cover-image-light.png);
     --section-title-color: #353430;
     --paragraph-text-color: #353430;
     --rectangle-color: #353430;
@@ -36,16 +39,14 @@
     --block-title-background: #ff8dcb;
     --border-color: #353430;
     --hover-color: #353430;
-    --hover-adres: #353430;
-    --focus-adres: #353430;
+    --link-hover-color: #353430;
+    --link-focus-color: #353430;
+    --link-shadow-color: #ff8dcb;
+    --accent-color: #ff8dcb;
+    --body-background-color:#FFF1F7;
   }
   
-  :root:not(.theme-dark):not(.theme-light) .rec-container {
+  :root .rec-container {
     display: none;
-  }
-  
-  :root:not(.theme-dark):not(.theme-light) .header__theme-menu-button_type_auto {
-    border: 1px solid var(--button-color);
-    pointer-events: none;
   }
 }
