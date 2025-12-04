@@ -1,41 +1,40 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
-  --rectangle-color: #ff0070;
-  --header-button-color: #ff0070;
-  --button-color: #ff0070;
-  --section-title-color: #ff0070;
-  --text-color-base: #ff0070;
-  --accent-color: #ff0070;
-  --header-button-color: #ff0070;
+  --body-background-color: #000028;
+  --body-background-image: url(../images/cover-image-dark.png);
+  --title-color: #DB00FF;
+  --section-title-color: #FF0070;
+  --paragraph-text-color: #F1B2CE;
+  --rectangle-color: #FF0070;
+  --button-color: #FF0070;
   --block-title-color: #000028;
-  --block-title-background: #ff0070;
-  --hover-color:#ff0070;
-  --focus-adres:#F1B2CE;
+  --block-title-background: #FF0070;
+  --border-color: #FF0070;
+  --hover-color: #FF0070;
+  --link-hover-color: #F1B2CE;
+  --link-focus-color: #F1B2CE;
+  --link-shadow-color: #FF0070;
+  --accent-color: #FF0070;
+  --text-color-base: #FF0070;
 }
 
-
+/* Для авторежима с prefers-color-scheme: dark */
 @media (prefers-color-scheme: dark) {
-  :root:not(.theme-light):not(.theme-dark) {
-    --rectangle-color: #ff0070;
-    --header-button-color: #ff0070;
-    --button-color: #ff0070;
-    --section-title-color: #ff0070;
-    --text-color-base: #ff0070;
-    --accent-color: #ff0070;
-    --header-button-color: #ff0070;
+  :root {
+    --body-background-color: #000028;
+    --body-background-image: url(../images/cover-image-dark.png);
+    --title-color: #DB00FF;
+    --section-title-color: #FF0070;
+    --paragraph-text-color: #F1B2CE;
+    --rectangle-color: #FF0070;
+    --button-color: #FF0070;
     --block-title-color: #000028;
-    --block-title-background: #ff0070;
-    --hover-color:#ff0070;
-    --focus-adres:#F1B2CE;
-  }
-  
-  :root:not(.theme-light):not(.theme-dark) .header__theme-menu-button_type_auto {
-    border: 1px solid var(--button-color);
-    pointer-events: none;
+    --block-title-background: #FF0070;
+    --border-color: #FF0070;
+    --hover-color: #FF0070;
+    --link-hover-color: #F1B2CE;
+    --link-focus-color: #F1B2CE;
+    --link-shadow-color: #FF0070;
+    --accent-color: #FF0070;
+    --text-color-base: #FF0070;
   }
 }
