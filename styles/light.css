@@ -20,10 +20,11 @@
   --link-shadow-color: #ff8dcb;
   --accent-color: #ff8dcb;
   --body-background-color:#FFF1F7;
+  --display-container:none;
 }
 
 :root.theme-light .rec-container {
-  display: none;
+  display: var(--display-container);
 }
 
 /* Для авторежима с prefers-color-scheme: light */
@@ -44,9 +45,6 @@
     --link-shadow-color: #ff8dcb;
     --accent-color: #ff8dcb;
     --body-background-color:#FFF1F7;
-  }
-  
-  :root .rec-container {
-    display: none;
+    --display-container:none;
   }
 }
