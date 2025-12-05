@@ -15,6 +15,7 @@
   --link-shadow-color: #FF0070;
   --accent-color: #FF0070;
   --text-color-base: #FF0070;
+  --display-container:flex;
 }
 
 /* Для авторежима с prefers-color-scheme: dark */
@@ -36,5 +37,6 @@
     --link-shadow-color: #FF0070;
     --accent-color: #FF0070;
     --text-color-base: #FF0070;
+    --display-container:flex;
   }
 }
